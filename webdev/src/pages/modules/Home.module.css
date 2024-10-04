@@ -1,0 +1,47 @@
+.main{
+    padding-top: 13dvh;
+    height: 87dvh;
+}
+
+.bg{
+    height: 100%;
+    background: url(../../assets/img/casaPgPrincipal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.containerCanto{
+    background-color: var(--white-imobi);
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+}
+
+.flexMain{
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    margin-left: 40px;
+    gap: 30px;
+}
+
+.containerTxt h1{
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: var(--blue-ligth);
+    line-height: 35px;
+
+    span{
+        color: #193559;
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+}
+
