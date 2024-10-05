@@ -26,3 +26,19 @@
 .btnLearnMore:hover{
     background-color: var(--blue-dark);
 }
+
+.cardBtn{
+    background-color: var(--black);
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: var(--white-imobi);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.cardBtn:hover{
+    background-color: var(--white-imobi);
+    color: var(--blue-dark);
+}

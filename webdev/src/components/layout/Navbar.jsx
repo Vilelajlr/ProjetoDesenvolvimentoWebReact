@@ -18,8 +18,8 @@ export default function Navbar(){
                     <div className={styles.containerLinks}>
                         <ul>
                             <li><Link nome="Home" url="#" nomeStyle="btn-nav" /></li>
-                            <li><Link nome="Houses" url="#" nomeStyle="btn-nav" /></li>
-                            <li><Link nome="About" url="#" nomeStyle="btn-nav" /></li>
+                            <li><Link nome="Houses" url="#houses" nomeStyle="btn-nav" /></li>
+                            <li><Link nome="About" url="#about" nomeStyle="btn-nav" /></li>
                             <li><Link nome="Contact" url="#" nomeStyle="btn-nav" /></li>
                         </ul>
                     </div>

@@ -1,25 +1,33 @@
-import React from "react";
-
+import React, {useState} from "react";
 import casaum from '../assets/img/casa1.png';
 import casadois from '../assets/img/casa2.png';
 import casatres from '../assets/img/casa3.jpg';
-
 import styles from './modules/Houses.module.css';
 import Link from "../components/Link";
-
 import Slider from "react-slick";
 
 
 
 export default function Houses() {
 
+
+
+
+
+    const [activeSlide, setActiveSlide] = useState(0);
+
     const settings = {
         className: "center",
         centerMode: true,
-        infinite: true,
-        centerPadding: "60px",
-        slidesToShow: 3,
-        speed: 500
+        infinite: false,
+        centerPadding: "450px",
+        slidesToShow: 1,
+        speed: 500,
+        dots: true,
+        beforeChange: (current, next) => setActiveSlide(next),
+        afterChange: current => setActiveSlide(current),
+        cssEase: 'ease-in-out',
+       
       };
 
     const btnName = 'Show More';
@@ -46,21 +54,18 @@ export default function Houses() {
             btnName: btnName,
             hover: 'Compra'
         }
-    ]
-
-
+    ];
 
     return (
-        <section className={styles.sectionHouse}>
+        <section id="houses" className={styles.sectionHouse}>
             <div className={styles.containerHouse}>
                 <h1>House Catalog</h1>
 
-                
-                <div className={styles.containerCards}>
-                <Slider {...settings}>
-                    {houses.map((house) => (
-                        
-                        <div key={house.id} className={styles.cards}>
+                <Slider {...settings} >
+                    {houses.map((house, index) => (
+                        <div key={house.id} 
+                             className={`${styles.cards} ${index === activeSlide ? styles.activeCard : styles.disabledCard}`}
+                        >
                             <div className={styles.imgCards}>
                                 <div className={styles.containerHover}>{house.hover}</div>
                                 <img src={house.img} alt={house.name} />
@@ -72,12 +77,8 @@ export default function Houses() {
                                 <Link nome={house.btnName} url="#" nomeStyle="cardBtn" />
                             </div>
                         </div>
-                        
                     ))}
                 </Slider>
-                    
-                </div>
-                
             </div>
         </section>
     );

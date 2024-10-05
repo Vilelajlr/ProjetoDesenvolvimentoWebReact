@@ -1,0 +1,53 @@
+.sectionAbout{
+    width: 100%;
+    min-height: 80vh;
+}
+
+.interfaceAbout{
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 8% 80px;
+}
+
+
+.flexAbout{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.imgAbout{
+    width: 500px;
+    
+
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}
+
+.txtAbout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+
+    h1{
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        color: var(--blue-dark);
+    }
+
+    p{
+        font-size: 1rem;
+        font-family: 'Open Sans', sans-serif;
+        color: var(--black);
+    }
+
+}
+
