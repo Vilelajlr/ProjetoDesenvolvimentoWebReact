@@ -42,3 +42,19 @@
     background-color: var(--white-imobi);
     color: var(--blue-dark);
 }
+
+.btnContact{
+    background-color: var(--black);
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: var(--white-imobi);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btnContact:hover{
+    background-color: var(--white-imobi);
+    color: var(--blue-dark);
+}
