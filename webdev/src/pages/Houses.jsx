@@ -58,7 +58,7 @@ export default function Houses() {
 
     return (
         <section id="houses" className={styles.sectionHouse}>
-            <div className={styles.containerHouse}>
+            <div className={styles.containerHouse} data-aos="fade-up" data-aos-delay="200">
                 <h1>House Catalog</h1>
 
                 <Slider {...settings} >

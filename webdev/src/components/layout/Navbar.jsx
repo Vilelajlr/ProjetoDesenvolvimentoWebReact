@@ -10,8 +10,8 @@ export default function Navbar(){
     return(
         <header className={styles.header}>
             <nav className={styles.nav}>
-                <div className={styles.flexNav}>
-                    <div className={styles.containerLogo}>
+                <div className={styles.flexNav} data-aos="fade-down">
+                    <div className={styles.containerLogo} >
                         <h1>Blue Sky <span>Reality</span></h1>
                     </div>
 

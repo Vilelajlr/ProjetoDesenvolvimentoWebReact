@@ -12,11 +12,6 @@ export default function Contact(){
   const [text, setText] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [texto, setTexto] = useState('');
-  const [showPopup, setShowPopup] = useState(false);
-  const [popupStyle, setPopupStyle] = useState(''); // Novo estado para o estilo do pop-up
-
-  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
   const chacaracteres = maxLength - text.length;
 
@@ -35,7 +30,7 @@ export default function Contact(){
     <section className={styles.section_contact} id="contact">
       <h1 className={styles.txt_contact}  data-aos="fade-right">Entre em contato</h1>
       <div className={styles.flex_contact}>
-        <div>
+        
         
           <form  data-aos="fade-up" className={styles.form_contact}>
             <input
@@ -74,14 +69,8 @@ export default function Contact(){
             </div>
           </form>
         </div>
-        </div>
-    
         
-      {showPopup && (
-        <div className={`${styles.popup} ${popupStyle}`}>
-          {texto}
-        </div>
-      )}
+    
     </section>
   );
 }
