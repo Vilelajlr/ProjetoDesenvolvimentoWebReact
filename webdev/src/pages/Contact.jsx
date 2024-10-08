@@ -5,8 +5,6 @@
 import React, { useState } from "react";
 
 import styles from "./modules/Contact.module.css";
-
-import Button from "../components/Button";
 import Link from "../components/Link";
 
 export default function Contact(){
